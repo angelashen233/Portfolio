@@ -17,6 +17,7 @@
 /* grid layout template */
 .grid_2{
   display: flex;
+  align-self: flex-start;
 }
 .item1 { grid-area: header; }
 .item2 { grid-area: main; }
@@ -43,6 +44,38 @@
 }
 
 
+div{
+	margin: 40px;
+	font-size: 16px;
+	display: block;
+	text-align: center;
+}
+
+p{
+		color: #0a0a0a;
+}
+
+/* @keyframes pulse {
+
+	from {
+	 opacity: 0.0;
+	 font-size: 100%;
+	}
+
+	to {
+	 opacity: 1.0;
+	 font-size: 400%;
+	}
+} */
+
+/* div {
+		 animation-name: pulse;
+		 animation-duration: 2s;
+		 animation-iteration-count: 2;
+		 animation-timing-function: ease-in;
+		 animation-direction: alternate;
+} */
+
 
 html {
   line-height: 1.15;
@@ -50,18 +83,28 @@ html {
 }
 
 body {
-  margin: 1em;
+  margin: 0em;
 }
 
 .subtitle{
+  font-size: large;
   font-style: italic;
-  margin: 0,5%;
 }
 
 h1 {
   font-family: "Noto Sans", sans-serif, monospace;
   font-size: 2em;
   margin: 0.67em 0;
+}
+
+.color-primary{
+  background-color: #1685a3;
+  color: #0a0a0a;
+}
+
+.color-secondary{
+  background-color: #f4cc4b;
+  color: #0a0a0a;
 }
 
 nav.a{
@@ -92,6 +135,7 @@ pre {
 
 a {
   background-color: transparent;
+  font-size: medium;
 }
 
 abbr[title] {
@@ -2951,7 +2995,7 @@ p,
 blockquote,
 th,
 td {
-  margin: 0 3%;
+  margin: 0 0;
   padding: 0;
 }
 
@@ -3001,6 +3045,7 @@ h6, .h6 {
   font-weight: normal;
   color: inherit;
   text-rendering: optimizeLegibility;
+  margin: 5%;
 }
 h1 small, .h1 small,
 h2 small, .h2 small,
