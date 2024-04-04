@@ -51,6 +51,10 @@ div{
 	text-align: center;
 }
 
+iframe{
+  max-width: 900px;
+}
+
 p{
 		color: #0a0a0a;
 }
