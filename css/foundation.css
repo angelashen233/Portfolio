@@ -76,11 +76,6 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
-
-body {
-  margin: 0em;
-}
-
 .subtitle{
   font-size: large;
   font-style: italic;
@@ -110,6 +105,11 @@ pre {
 
 .noto-sans{
   font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.Delmont{
+  font-family: Delmonte,"Noto Sans", sans-serif;
   font-optical-sizing: auto;
 }
 
@@ -156,8 +156,9 @@ sup {
   top: -0.5em;
 }
 
-img {
+img .column3 {
   border-style: none;
+  max-width: 300px;
 }
 
 button,
@@ -2984,7 +2985,7 @@ div{
 }
 
 p {
-  font-size: inherit;
+  font-size: 1em;
   line-height: 1.6;
   width: 100%;
   word-wrap: break-word;
@@ -3019,7 +3020,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "noto sans", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Butterbean,"noto sans", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   color: inherit;
@@ -3036,8 +3037,21 @@ h6 small, .h6 small {
   color: #cacaca;
 }
 
+@font-face {
+  font-family: Headerfont;
+  src: url('/fonts/FlyingBird-Yz9Ga.otf') format('opentype');
+}
+@font-face {
+  /* A fancier handwriting font */
+  font-family: Delmonte;
+  src: url('/fonts/Delmonte-2OR3v.ttf') format('opentype');
+}
+@font-face {
+  font-family: Butterbean;
+  src: url('/fonts/Butterbean-jELd9.otf') format('opentype');
+}
 h1, .h1 {
-  font-family: "Noto Sans", sans-serif, monospace;
+  font-family: Butterbean,Headerfont,"Noto Sans", sans-serif, monospace;
   font-size: 2em;
   margin: 0.67em 0;
 }
